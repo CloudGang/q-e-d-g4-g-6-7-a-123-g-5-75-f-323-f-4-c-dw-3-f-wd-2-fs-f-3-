@@ -2,7 +2,7 @@ import streamlit as st
 
 def x1x():
   B='o.txt';C=open(B,'r');D=C.readline();st.write("Save Your Key!")
-  with col2
+  with col2:
     st.write(f":orange[Black-Key Code: ]:green[{D}]")
   with open(B,'r')as A:
     E=A.readlines()
