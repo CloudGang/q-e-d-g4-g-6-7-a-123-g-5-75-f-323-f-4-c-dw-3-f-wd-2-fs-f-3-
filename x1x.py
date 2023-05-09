@@ -1,7 +1,7 @@
 import streamlit as st
 
 def x1x():
-  B='o.txt';C=open(B,'r');D=C.readline();st.write("Save Your Key!");st.write(":green[If you see Brackets :orange[[ ]], Your code is :orange[[] BETWEEN :orange[]] the brackets.]")
+  B='o.txt';C=open(B,'r');D=C.readline();st.write("Save Your Key!");st.write(":green[If you see Brackets :orange[[ ]], Your code is :orange['['] BETWEEN :orange[']'] the brackets.]")
   with col2:
     st.write(f":orange[Black-Key Code: ]:green[{D}]")
   with open(B,'r')as A:
