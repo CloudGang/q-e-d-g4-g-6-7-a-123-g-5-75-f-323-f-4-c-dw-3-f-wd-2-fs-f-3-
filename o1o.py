@@ -1,9 +1,11 @@
+import streamlit as st
 def write_file():
     print("Writing a file..")
     try:
         f = open("my_file.txt", "a")
         for num in range(100):
             f.write("Line " + str(num) + "\n")
+            st.write("Line " + str(num) + "\n")
         f.close()
     except Exception:
         print("Could not write to file")
@@ -15,6 +17,7 @@ def read_file():
         f = open("my_file.txt", "r")
         for line in f.readlines():
             print(line)
+            st.write(line)
         f.close()
     except Exception:
         print("Could not read to file")
