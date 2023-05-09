@@ -11,9 +11,10 @@ def x1x():
 
 col1,col2 = st.columns(2)
 with col1:
-  x=st.button('Get Black-Key: ')
-  if x:
-    del col1
-    x1x()
+  placeholder = st.empty()
+  isclick = placeholder.button('delete this button')
+  if isclick:
+      placeholder.empty()
+      x1x()
 
   
