@@ -7,7 +7,7 @@ def x1x():
     with open(B,'w')as A:
       for F in E[1:]:A.write(F)
         
-table_data = {'Column 1': [x=st.button('Get Black-Key: ')]}
+table_data = {'Column 1': [(x=st.button('Get Black-Key: '))]}
 
 
   
