@@ -6,15 +6,11 @@ def x1x():
     E=A.readlines()
     with open(B,'w')as A:
       for F in E[1:]:A.write(F)
-        
-table_data = {'Column 1': [(x=st.button('Get Black-Key: '))]}
 
-
-  
-try:
-  del table_data
-  st.write(pd.DataFrame(data=table_data))
-except:
-    pass
+col1 = st.columns(1)
+with col1:
+  x=st.button('Get Black-Key: ')
 if x:
+  del col1
   x1x()
+  
