@@ -13,7 +13,7 @@ ID = st.text_input("Transaction ID")
 col1,col2 = st.columns(2)
 with col1:
   placeholder = st.empty()
-  if cust in ID:
+  if ID in cust:
     isclick = placeholder.button('Get Black-Key Code')
     if isclick:
         placeholder.empty()
