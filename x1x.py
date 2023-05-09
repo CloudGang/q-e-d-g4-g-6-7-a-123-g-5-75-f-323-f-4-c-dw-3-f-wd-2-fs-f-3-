@@ -9,7 +9,7 @@ def x1x():
     with open(B,'w')as A:
       for F in E[1:]:A.write(F)
 
-col1,col2 = st.columns(1)
+col1,col2 = st.columns(2)
 with col1:
   x=st.button('Get Black-Key: ')
   if x:
