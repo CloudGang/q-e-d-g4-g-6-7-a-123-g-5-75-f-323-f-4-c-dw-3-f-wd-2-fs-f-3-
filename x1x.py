@@ -8,13 +8,15 @@ def x1x():
     E=A.readlines()
     with open(B,'w')as A:
       for F in E[1:]:A.write(F)
-
+cust = ["@","#"]
+ID = st.text_input("Transaction ID")
 col1,col2 = st.columns(2)
 with col1:
   placeholder = st.empty()
-  isclick = placeholder.button('delete this button')
-  if isclick:
-      placeholder.empty()
-      x1x()
+  if cust in ID:
+    isclick = placeholder.button('Get Black-Key Code')
+    if isclick:
+        placeholder.empty()
+        x1x()
 
   
