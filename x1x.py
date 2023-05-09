@@ -8,8 +8,8 @@ def x1x():
     E=A.readlines()
     with open(B,'w')as A:
       for F in E[1:]:A.write(F)
-cust = ["441","512"]
-ID = st.text_input("Transaction ID")
+cust = ["BBW6843311"]
+ID = st.text_input("Enter your Paypal Item ID#","ie: BB3871")
 col1,col2 = st.columns(2)
 with col1:
   placeholder = st.empty()
