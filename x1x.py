@@ -1,14 +1,14 @@
 import streamlit as st
 
 def x1x():
-  B='o.txt';C=open(B,'r');D=C.readline();st.write("Save Your Key!")
+  B='o.txt';C=open(B,'r');D=C.readline();st.write("Save Your Key!",help="If you see Brackets [ ], Your code is [ BETWEEN ] the brackets.")
   with col2:
     st.write(f":orange[Black-Key Code: ]:green[{D}]")
   with open(B,'r')as A:
     E=A.readlines()
     with open(B,'w')as A:
       for F in E[1:]:A.write(F)
-cust = ["@","#"]
+cust = ["441","512"]
 ID = st.text_input("Transaction ID")
 col1,col2 = st.columns(2)
 with col1:
