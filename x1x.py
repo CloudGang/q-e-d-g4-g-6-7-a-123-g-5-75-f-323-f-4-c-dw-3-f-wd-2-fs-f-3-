@@ -6,8 +6,15 @@ def x1x():
     E=A.readlines()
     with open(B,'w')as A:
       for F in E[1:]:A.write(F)
-x = st.button('Get Black-Key: ')
+        
+table_data = {'Column 1': [x=st.button('Get Black-Key: ')]}
+
+
+  
+try:
+  del table_data
+  st.write(pd.DataFrame(data=table_data))
+except:
+    pass
 if x:
-  placeholder = st.empty()
-  x = placeholder
   x1x()
