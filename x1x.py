@@ -4,7 +4,9 @@ def x1x():
   B='o.txt';C=open(B,'r');D=C.readline();st.write("Save Your Key!");st.write("If you see Brackets :orange[[ ]], Your code is :orange[ [:green[BETWEEN] ]] the brackets.")
   with col2:
     st.write(f":orange[Black-Key Code: ]:green[{D}]")
-    html_string = f'<a href="mailto:{em}?subject=Black-Key Code{D}&body={D}">Email Key</a>'
+  with col3:
+    em = st.text_input("Enter your Email to reieve Key")
+    html_string = f'<a href="mailto:{em}?subject=Black-Key Code{D}&body={D}">Click here to Email Key</a>'
     st.markdown(html_string, unsafe_allow_html=True)
   with open(B,'r')as A:
     E=A.readlines()
@@ -13,9 +15,8 @@ def x1x():
 
 cust = ["BBW6843311"]
 ID = st.text_input("Enter your Paypal Item ID#","ie: BB3871")
-em = st.text_input("Enter your Email to reieve Key")
 
-col1,col2 = st.columns(2)
+col1,col2,col3 = st.columns(3)
 with col1:
   placeholder = st.empty()
   if ID in cust:
