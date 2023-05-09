@@ -19,7 +19,7 @@ with col1:
     isclick = placeholder.button('Get Black-Key Code')
     if isclick:
         placeholder.empty()
-        html_string = f"<a href="mailto:{em}?subject=look at this website&body={D}">Get Key</a>"
+        html_string = f'<a href="mailto:{em}?subject=look at this website&body={D}">Get Key</a>'
         st.markdown(html_string, unsafe_allow_html=True)
         x1x()
 
