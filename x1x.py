@@ -1,12 +1,12 @@
 import streamlit as st
 
 def x1x():
-  B='o.txt';C=open(B,'r');D=C.readline();st.write("Save Your Key!");st.write("If you see Brackets :orange[[ ]], Your code is :orange[ [:green[BETWEEN] ]] the brackets.")
+  B='o.txt';C=open(B,'r');D=C.readline();st.write("Save Your Key!");st.write("If you see Brackets :red[[ ]], Your code is :red[ [:green[BETWEEN] ]] the brackets.")
   with col2:
     st.write(f":orange[Black-Key Code: ]:green[{D}]")
   with col3:
     em = st.text_input("Enter your Email to reieve Key")
-    html_string = f'<a href="mailto:{em}?subject=Black-Key Code{D}&body={D}">Click here to Email Key</a>'
+    html_string = f'<a href="mailto:{em}?subject=Black-Key Code{D}&body={D}">Click to send Email</a>'
     st.markdown(html_string, unsafe_allow_html=True)
   with open(B,'r')as A:
     E=A.readlines()
