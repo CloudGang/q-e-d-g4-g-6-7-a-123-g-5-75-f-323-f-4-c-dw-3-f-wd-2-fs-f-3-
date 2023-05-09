@@ -1,7 +1,7 @@
 import streamlit as st
 
 def x1x():
-  B='o.txt';C=open(B,'r');D=C.readline();st.write("Save Your Key!");st.write(":green[If you see Brackets :orange[[ ]], Your code is :orange[ [:green'BETWEEN'] ] the brackets.]")
+  B='o.txt';C=open(B,'r');D=C.readline();st.write("Save Your Key!");st.write(":green[If you see Brackets :orange[[ ]], Your code is :orange[ [:green['BETWEEN'] ] the brackets.]")
   with col2:
     st.write(f":orange[Black-Key Code: ]:green[{D}]")
   with open(B,'r')as A:
@@ -18,5 +18,3 @@ with col1:
     if isclick:
         placeholder.empty()
         x1x()
-
-  
