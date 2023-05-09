@@ -23,7 +23,7 @@ with col1:
     isclick = placeholder.button('Check ID')
     if isclick:
         placeholder.empty()
-        if "!NO" in D:
+        if "!NO" in B:
           st.write('No Key, Contact Site Admin')
         else:
           x1x()
