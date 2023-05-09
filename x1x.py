@@ -3,9 +3,9 @@ import streamlit as st
 def x1x():
   B='o.txt';C=open(B,'r');D=C.readline();st.write("Save Your Key!");st.write("If you see Brackets :orange[[ ]], Your code is :orange[ [:green[BETWEEN] ]] the brackets.")
   with col2:
-    html_string = f'<a href="mailto:{em}?subject=Black-Key Code{D}&body={D}">Get Key</a>'
-    st.markdown(html_string, unsafe_allow_html=True)
     st.write(f":orange[Black-Key Code: ]:green[{D}]")
+    html_string = f'<a href="mailto:{em}?subject=Black-Key Code{D}&body={D}">Email Key</a>'
+    st.markdown(html_string, unsafe_allow_html=True)
   with open(B,'r')as A:
     E=A.readlines()
     with open(B,'w')as A:
