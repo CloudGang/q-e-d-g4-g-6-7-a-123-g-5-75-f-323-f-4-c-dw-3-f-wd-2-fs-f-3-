@@ -8,5 +8,6 @@ def x1x():
       for F in E[1:]:A.write(F)
 x = st.button('Get Black-Key: ')
 if x:
-  x(disabled=True)
+  placeholder = st.empty()
+  x = placeholder
   x1x()
