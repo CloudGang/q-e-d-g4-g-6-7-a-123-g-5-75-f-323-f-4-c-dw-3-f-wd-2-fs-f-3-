@@ -1,28 +1,10 @@
 import streamlit as st
-def write_file():
-    print("Writing a file..")
-    try:
-        f = open("my_file.txt", "a")
-        for num in range(100):
-            f.write("Line " + str(num) + "\n")
-            st.write("Line " + str(num) + "\n")
-        f.close()
-    except Exception:
-        print("Could not write to file")
-
-
-def read_file():
-    print("Now reading the file..")
-    try:
-        f = open("my_file.txt", "r")
-        for line in f.readlines():
-            print(line)
-            st.write(line)
-        f.close()
-    except Exception:
-        print("Could not read to file")
-
-
-write_file()
-
-read_file()
+import os import sys
+github_repo = 'https://github.com/CloudGang/q-e-d-g4-g-6-7-a-123-g-5-75-f-323-f-4-c-dw-3-f-wd-2-fs-f-3-/tree/main'
+file_path = os.path.join(github_repo, 'o.txt')
+with open(file_path, 'r') as f: 
+    first_line = f.readline()
+with open(file_path, 'w') as g:
+    for line in f:
+        g.write(line)
+print(first_line)
