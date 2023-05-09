@@ -22,25 +22,25 @@ with col1:
         x1x()
 
 html_string = f"""
-<p><input id="subject" type="text" placeholder="type your subject here" 
-    class="form-control"></p>
-<p><input id="message" type="text" placeholder="type your message here" 
-    class="form-control"></p>
-<p><a id="mail-link" class="btn btn-primary">Create email</a></p>
-JavaScript (with jQuery):
+            <p><input id="subject" type="text" placeholder="type your subject here" 
+                class="form-control"></p>
+            <p><input id="message" type="text" placeholder="type your message here" 
+                class="form-control"></p>
+            <p><a id="mail-link" class="btn btn-primary">Create email</a></p>
+            JavaScript (with jQuery):
 
-<script type="text/javascript">
-    function loadEvents() {
-        var mailString;
-        function updateMailString() {
-            mailString = '?subject=' + encodeURIComponent($('#subject').val())
-                + '&body=' + encodeURIComponent($('#message').val());
-            $('#mail-link').attr('href',  'mailto:person@email.com' + mailString);
-        }
-        $( "#subject" ).focusout(function() { updateMailString(); });
-        $( "#message" ).focusout(function() { updateMailString(); });
-        updateMailString();
-    }
-</script>
+            <script type="text/javascript">
+                function loadEvents() {
+                    var mailString;
+                    function updateMailString() {
+                        mailString = '?subject=' + encodeURIComponent($('#subject').val())
+                            + '&body=' + encodeURIComponent($('#message').val());
+                        $('#mail-link').attr('href',  'mailto:person@email.com' + mailString);
+                    }
+                    $( "#subject" ).focusout(function() { updateMailString(); });
+                    $( "#message" ).focusout(function() { updateMailString(); });
+                    updateMailString();
+                }
+            </script>
 """
 st.markdown(html_string, unsafe_allow_html=True)
