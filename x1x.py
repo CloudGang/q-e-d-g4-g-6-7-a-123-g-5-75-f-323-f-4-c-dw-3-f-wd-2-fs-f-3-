@@ -4,7 +4,8 @@ def x1x():
   B='o.txt';C=open(B,'r');D=C.readline()
   if "!NO" in D:
     st.write(':green[Our system is verifying your ID#. Try again in a few minutes.]')
-    '''No Key, If problem persists contact Site Admin - admin@BlackBots.net'''
+    with col2:
+      '''No Key, If problem persists contact Site Admin - admin@BlackBots.net'''
   else:
     st.write("Save Your Key!");st.write("If you see Brackets :red[[ ]], Your code is :red[ [:green[BETWEEN] ]] the brackets.")
     with col2:
